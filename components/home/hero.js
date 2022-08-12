@@ -1,4 +1,5 @@
 import Animation from "./animation";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -19,9 +20,11 @@ export default function Hero() {
           소리다.이것은 이 구하지 피가 풀이 위하여서. 것은 할지라도 이것을 있다.
         </p>
         <div className="flex justify-center">
-          <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            똥이나싸러가자
-          </button>
+          <Link href="/projects">
+            <a className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              똥이나싸러가자
+            </a>
+          </Link>
         </div>
       </div>
       <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
