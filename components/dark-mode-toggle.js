@@ -5,7 +5,7 @@ const DarkModeToggleButton = () => {
   return (
     <>
       <button
-        className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+        className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-50 dark:bg-slate-600 dark:text-slate-400 dark:hover:bg-slate-700 hover:text-orange-500 dark:hover:text-yellow-300  rounded text-base mt-4 md:mt-0"
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
