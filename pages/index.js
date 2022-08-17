@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Ham's portfolio</title>
+        <title>Ham portfolio</title>
         <meta name="description" content="hard coding!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
