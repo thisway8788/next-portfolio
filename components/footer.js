@@ -1,25 +1,26 @@
 import Link from "next/link";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <>
-      <footer className="text-gray-600 body-font">
-        <div className="bg-gray-100">
+      <footer className="body-font">
+        <div className="">
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <span className="ml-3 text-xl">똥이나싸라</span>
+                <span className="ml-3 text-xl">Ham's Portfolio </span>
               </a>
             </Link>
+
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-              © 2020 Tailblocks —
+              © 2022 Tailblocks —
               <a
-                href="https://twitter.com/knyttneve"
+                href="https://github.com/thisway8788"
                 rel="noopener noreferrer"
                 className="text-gray-600 ml-1"
                 target="_blank"
               >
-                @knyttneve
+                @thisway8788
               </a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
@@ -27,7 +28,7 @@ const Footer = () => {
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
-                  strokelinejoin="round"
+                  strokeLinejoin="round"
                   strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
@@ -84,5 +85,4 @@ const Footer = () => {
       </footer>
     </>
   );
-};
-export default Footer;
+}

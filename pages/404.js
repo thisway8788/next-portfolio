@@ -1,9 +1,7 @@
-const PageNotFound = () => {
-  return (
-    <div>
-      <h1>Page Not Found</h1>
-    </div>
-  );
-};
-
-export default PageNotFound;
+export default function PageNotFound(){
+    return(
+        <>
+            <h1>페이지를 찾을수 없습니다 ㅠㅠ</h1>
+        </>
+    );
+}

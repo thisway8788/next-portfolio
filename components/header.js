@@ -1,7 +1,7 @@
 import Link from "next/link";
-import DarkModeToggleButton from "./dark-mode-toggle";
+import DarkModeToggleButton from "./dark-mode-toggle-button";
 
-const Header = () => {
+export default function Header() {
   return (
     <>
       <header className="text-gray-600 body-font">
@@ -20,7 +20,7 @@ const Header = () => {
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <span className="ml-3 text-xl">똥이나싸라고</span>
+              <span className="ml-3 text-xl">Jeunghak Ham</span>
             </a>
           </Link>
 
@@ -33,16 +33,19 @@ const Header = () => {
               <a className="mr-5 hover:text-gray-900">Projects</a>
             </Link>
 
-            <Link href="https://github.com/thisway8788">
-              <a target="_blank" className="mr-5 hover:text-gray-900">
-                Github
-              </a>
-            </Link>
+            <a
+              href="https://github.com/thisway8788"
+              target="_blank"
+              className="mr-5 hover:text-gray-900"
+              rel="noreferrer"
+            >
+              Github
+            </a>
           </nav>
+          {/* 다크모드 토글 버튼 작업해야함 */}
           <DarkModeToggleButton />
         </div>
       </header>
     </>
   );
-};
-export default Header;
+}
