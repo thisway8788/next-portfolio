@@ -52,9 +52,9 @@ export default function ProjectItem({ data }) {
           {title}
         </h1>
         <h3 className="mt-4 text-xl">{description}</h3>
-        <a href={github}>깃허브 바로가기</a>
+        <a href={github}>Go to Github</a>
         <p className="my-1 ">
-          작업기간 : {start} ~ {end} ({calculatedPeriod(start, end)}일)
+          Timeline : {start} ~ {end} ({calculatedPeriod(start, end)}day)
         </p>
         <div className="flex items-start mt-2">
           {tags.map((aTag) => (
